@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Breakpoints Template</title>
+</head>
+<body>
+
+    <!-- Bootstrap 5 Breakpoints Reference -->
+    <!-- xs: <576px (extra small) - default, no media query needed -->
+    <!-- sm: ≥576px (small) -->
+    <!-- md: ≥768px (medium) -->
+    <!-- lg: ≥992px (large) -->
+    <!-- xl: ≥1200px (extra large) -->
+    <!-- xxl: ≥1400px (extra extra large) -->
+
+    <div class="container">
+        <header>
+            <h1>Bootstrap Breakpoints Template</h1>
+            <p>Этот шаблон демонстрирует все брейкпоинты Bootstrap 5</p>
+        </header>
+
+        <!-- Grid System Examples -->
+        <section class="grid-examples">
+            <h2>Grid System</h2>
+            
+            <!-- Stackable columns (mobile first) -->
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col">Column 2</div>
+                <div class="col">Column 3</div>
+            </div>
+
+            <!-- Responsive columns -->
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 1
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 2
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 3
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 4
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 5
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                    Responsive Column 6
+                </div>
+            </div>
+
+            <!-- Auto-layout columns -->
+            <div class="row">
+                <div class="col">Auto column</div>
+                <div class="col">Auto column</div>
+                <div class="col-6">Fixed column (6)</div>
+            </div>
+        </section>
+
+        <!-- Display Utilities -->
+        <section class="display-examples">
+            <h2>Display Utilities</h2>
+            
+            <div class="d-none d-sm-block">Visible on sm and up</div>
+            <div class="d-none d-md-block">Visible on md and up</div>
+            <div class="d-none d-lg-block">Visible on lg and up</div>
+            <div class="d-none d-xl-block">Visible on xl and up</div>
+            <div class="d-none d-xxl-block">Visible on xxl and up</div>
+            
+            <div class="d-block d-sm-none">Only visible on xs</div>
+            <div class="d-block d-md-none d-sm-block">Only visible on sm</div>
+            <div class="d-block d-lg-none d-md-block">Only visible on md</div>
+            <div class="d-block d-xl-none d-lg-block">Only visible on lg</div>
+            <div class="d-block d-xxl-none d-xl-block">Only visible on xl</div>
+        </section>
+
+        <!-- Flexbox Utilities -->
+        <section class="flexbox-examples">
+            <h2>Flexbox Utilities</h2>
+            
+            <div class="d-flex flex-column flex-sm-row">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+            </div>
+            
+            <div class="d-flex justify-content-start justify-content-sm-center justify-content-md-end justify-content-lg-between justify-content-xl-around">
+                <div>Flex item 1</div>
+                <div>Flex item 2</div>
+                <div>Flex item 3</div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="typography-examples">
+            <h2>Responsive Typography</h2>
+            
+            <h1 class="display-1 display-sm-2 display-md-3 display-lg-4 display-xl-5">Responsive Display</h1>
+            
+            <p class="fs-1 fs-sm-2 fs-md-3 fs-lg-4 fs-xl-5 fs-xxl-6">Responsive Font Size</p>
+            
+            <p class="text-start text-sm-center text-md-end text-lg-start text-xl-center text-xxl-end">
+                Responsive Text Alignment
+            </p>
+        </section>
+
+        <!-- Spacing -->
+        <section class="spacing-examples">
+            <h2>Responsive Spacing</h2>
+            
+            <div class="p-0 p-sm-1 p-md-2 p-lg-3 p-xl-4 p-xxl-5">
+                Responsive Padding
+            </div>
+            
+            <div class="m-0 m-sm-1 m-md-2 m-lg-3 m-xl-4 m-xxl-5">
+                Responsive Margin
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="navigation-examples">
+            <h2>Responsive Navigation</h2>
+            
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Brand</a>
+                    <button class="navbar-toggler d-lg-none" type="button">
+                        <span class="navbar-toggler-icon">☰</span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-block">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Cards -->
+        <section class="card-examples">
+            <h2>Responsive Cards</h2>
+            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Responsive card content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Responsive card content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Responsive card content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 4</h5>
+                            <p class="card-text">Responsive card content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tables -->
+        <section class="table-examples">
+            <h2>Responsive Tables</h2>
+            
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Min-width</th>
+                            <th>CSS Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>xs</td>
+                            <td>None</td>
+                            <td>.col</td>
+                            <td>Extra small devices (phones)</td>
+                        </tr>
+                        <tr>
+                            <td>sm</td>
+                            <td>≥576px</td>
+                            <td>.col-sm-*</td>
+                            <td>Small devices (landscape phones)</td>
+                        </tr>
+                        <tr>
+                            <td>md</td>
+                            <td>≥768px</td>
+                            <td>.col-md-*</td>
+                            <td>Medium devices (tablets)</td>
+                        </tr>
+                        <tr>
+                            <td>lg</td>
+                            <td>≥992px</td>
+                            <td>.col-lg-*</td>
+                            <td>Large devices (desktops)</td>
+                        </tr>
+                        <tr>
+                            <td>xl</td>
+                            <td>≥1200px</td>
+                            <td>.col-xl-*</td>
+                            <td>Extra large devices (large desktops)</td>
+                        </tr>
+                        <tr>
+                            <td>xxl</td>
+                            <td>≥1400px</td>
+                            <td>.col-xxl-*</td>
+                            <td>Extra extra large devices</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section class="form-examples">
+            <h2>Responsive Forms</h2>
+            
+            <form>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Alerts -->
+        <section class="alert-examples">
+            <h2>Responsive Alerts</h2>
+            
+            <div class="alert alert-primary d-none d-sm-block" role="alert">
+                This alert is visible on sm and up
+            </div>
+            <div class="alert alert-success d-none d-md-block" role="alert">
+                This alert is visible on md and up
+            </div>
+            <div class="alert alert-warning d-none d-lg-block" role="alert">
+                This alert is visible on lg and up
+            </div>
+            <div class="alert alert-danger d-none d-xl-block" role="alert">
+                This alert is visible on xl and up
+            </div>
+            <div class="alert alert-info d-none d-xxl-block" role="alert">
+                This alert is visible on xxl and up
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="button-examples">
+            <h2>Responsive Buttons</h2>
+            
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button">Primary</button>
+                <button class="btn btn-secondary" type="button">Secondary</button>
+                <button class="btn btn-success" type="button">Success</button>
+            </div>
+            
+            <div class="d-grid gap-2 d-lg-flex justify-content-lg-end">
+                <button class="btn btn-outline-primary" type="button">Left</button>
+                <button class="btn btn-outline-secondary" type="button">Middle</button>
+                <button class="btn btn-outline-success" type="button">Right</button>
+            </div>
+        </section>
+
+        <!-- Images -->
+        <section class="image-examples">
+            <h2>Responsive Images</h2>
+            
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Breakpoint Indicators -->
+        <section class="breakpoint-indicators">
+            <h2>Current Breakpoint Indicators</h2>
+            
+            <div class="d-block d-sm-none">
+                <div class="alert alert-info">Current: XS (&lt;576px)</div>
+            </div>
+            <div class="d-none d-sm-block d-md-none">
+                <div class="alert alert-success">Current: SM (≥576px)</div>
+            </div>
+            <div class="d-none d-md-block d-lg-none">
+                <div class="alert alert-warning">Current: MD (≥768px)</div>
+            </div>
+            <div class="d-none d-lg-block d-xl-none">
+                <div class="alert alert-danger">Current: LG (≥992px)</div>
+            </div>
+            <div class="d-none d-xl-block d-xxl-none">
+                <div class="alert alert-dark">Current: XL (≥1200px)</div>
+            </div>
+            <div class="d-none d-xxl-block">
+                <div class="alert alert-secondary">Current: XXL (≥1400px)</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Bootstrap 5 Breakpoints Template - All breakpoints demonstrated</p>
+        </footer>
+    </div>
+
+</body>
+</html>
