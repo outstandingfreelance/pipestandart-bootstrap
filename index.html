@@ -21,6 +21,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/media.css">
 
 
 
@@ -42,10 +43,10 @@
 <body class=" front no_boxes no_sidemenu">
     <div id="wrapper">
         <!--head-->
-        <header id="head" class="header header--fixed clearfix">
+        <header id="head" class="container header header--fixed clearfix">
             <div class="header__container container">
-                <a id="logo" class="header__logo" href="http://pipestandart.ee/">
-                    <img src="images/logo-big.png">
+                <a id="logo" class="header__logo-link clearfix" href="http://pipestandart.ee/">
+                    <img class="header__logo-img" src="images/logo-big.png">
                 </a>
             </div>
 
@@ -99,16 +100,16 @@
         <main id="main" class="main container">
             <!--content-->
             <section id="front-content" class="content content--front container col-12">
-                <header class="page-head page-head--has-img">
-                    <h1 class="page-head__title fl">
-                        <span class="page-head__title-top head-top">
-                            <span class="page-head__title-mid head-mid">
+                <div class="section-hero section-hero--has-img">
+                    <h1 class="section-hero__title col-6 fl">
+                        <span class="section-hero__title-top head-top">
+                            <span class="section-hero__title-mid head-mid ">
                                 Välisvõrkude ehitus ning suuremahulised mulla ja kaevetööd.
                             </span>
                         </span>
                     </h1>
 
-                    <ul class="slider container slider--big big_slider col-12">
+                    <ul class="slider slider--big big_slider col-12">
                         <li class="slider__item">
                             <img class="slider__image" src="images/ban_1385367029.gif" alt="">
                             <div class="caption">
@@ -145,54 +146,59 @@
                             </div>
                         </li>
                     </ul>
-                </header>
+                </div>
 
                 <div class="col-xl-12 overflow-hidden content__inner inner">
                     <a href="tehtud-tood" class="content__work-link our-work">TUTVU MEIE TEHTUD TÖÖDEGA <i
                             class="fa fa-chevron-right"></i></a>
                     <div class="clear"></div>
 
-                    <div class="row row--clearfix clearfix">
-                        <div class="card card--one-third">
-                            <h2 class="card__title">Tutvustus</h2>
-                            <img class="card__image" src="images/front-column.jpg">
-                            <p class="card__text"><b>Osaühing Pipe Standart on asutatud 2010 aastal.<br>
-                                </b>Aastatega oleme oma ridadesse koondanud rõõmsameelse ja tubli professionaalidest
-                                koosneva meeskonna, mis lahendab probleemideta ka keerulisemad väljakutsed. Meie
-                                meeskond koosneb 12 töötajast, enamikul neist on aastatepikkune välisvõrkude ehituse
-                                staaž.</p>
-                            <a href="ettevottest" class="card__link read-more">Loe edasi <i
-                                    class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <div class="card card--one-third card--middle one-third middle">
-                            <h2 class="card__title">Teenused</h2>
-                            <img class="card__image" src="images/front-column%281%29.jpg">
-                            <p class="card__text"><strong>Meie tegevusvaldkondadeks on:</strong></p>
-                            <ul>
-                                <li class="card__list-item">välisvõrkude ehitus;</li>
-                                <li class="card__list-item">suuremahulised mulla ja kaevetööd;</li>
-                                <li class="card__list-item">eriotstarbeliste masinate rent;</li>
-                                <li class="card__list-item">lumetõrjetööd.</li>
-                            </ul>
-                            <p class="card__text"><strong>Peamisteks märksõnadeks meiega koostöös on täpsus, ausus ja
-                                    usaldus.</strong></p>
-                            <p> </p>
-                            <a href="teenused" class="card__link read-more">Loe edasi <i
-                                    class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <div class="card card--one-third">
-                            <h2 class="card__title">Masinapark</h2>
-                            <img class="card__image" src="images/front-column%282%29.jpg">
-                            <p class="card__text"><strong>Välisvõrkude ehitus eeldab eriotstarbeliste masinate
-                                </strong>olemasolu ja
-                                seetõttu oleme investeerinud tehnikasse, mis võimaldab rakendada säästlikke ja
-                                tänapäevasemaid tehnoloogiaid ehituses ja mullatöödel.</p>
-                            <p class="card__text">Meie masinapargiga saate tutvuda klikkides allpool olevale lingile
-                                "loe edasi".</p>
-                            <a href="masinapark" class="card__link read-more">Loe edasi <i
-                                    class="fa fa-chevron-right"></i></a>
-                        </div>
-                    </div>
+                    <ul class="row clearfix cards-list">
+                        <li class="card-wrapper col-xl-4 col-lg-4 col-med-12 col-sm-12">
+                            <div class="card">
+                                <h2 class="card__title">Tutvustus</h2>
+                                <img class="card__image" src="images/front-column.jpg">
+                                <p class="card__text"><b>Osaühing Pipe Standart on asutatud 2010 aastal.<br>
+                                    </b>Aastatega oleme oma ridadesse koondanud rõõmsameelse ja tubli professionaalidest
+                                    koosneva meeskonna, mis lahendab probleemideta ka keerulisemad väljakutsed. Meie
+                                    meeskond koosneb 12 töötajast, enamikul neist on aastatepikkune välisvõrkude ehituse
+                                    staaž.</p>
+                                <a href="ettevottest" class="card__link read-more">Loe edasi <i
+                                        class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="card-wrapper col-xl-4 col-lg-4 col-med-12 col-sm-12">
+                            <div class="card">
+                                <h2 class="card__title">Teenused</h2>
+                                <img class="card__image" src="images/front-column.jpg">
+                                <p class="card__text"><strong>Meie tegevusvaldkondadeks on:</strong></p>
+                                <ul class="card_text-list">
+                                    <li class="card__text-item">välisvõrkude ehitus;</li>
+                                    <li class="card__text-item">suuremahulised mulla ja kaevetööd;</li>
+                                    <li class="card__text-item">eriotstarbeliste masinate rent;</li>
+                                    <li class="card__text-item">lumetõrjetööd.</li>
+                                </ul>
+                                <p class="card__text middle-card-text"><strong>Peamisteks märksõnadeks meiega koostöös on täpsus, ausus
+                                        ja
+                                        usaldus.</strong></p>
+                                <a href="teenused" class="card__link read-more">Loe edasi <i
+                                        class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="card-wrapper  col-lg-4 col-med-12 col-sm-12">
+                            <div class="card">
+                                <h2 class="card__title">Masinapark</h2>
+                                <img class="card__image" src="images/front-column.jpg">
+                                <p class="card__text"><strong>Välisvõrkude ehitus eeldab eriotstarbeliste masinate
+                                    </strong>olemasolu ja
+                                    seetõttu oleme investeerinud tehnikasse, mis võimaldab rakendada säästlikke ja
+                                    tänapäevasemaid tehnoloogiaid ehituses ja mullatöödel.</p>
+                                <p class="card__text">Meie masinapargiga saate tutvuda klikkides allpool olevale lingile
+                                    "loe edasi".</p>
+                                <a href="masinapark" class="card__link read-more">Loe edasi <i
+                                        class="fa fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
                 </div>
 
             </section>
