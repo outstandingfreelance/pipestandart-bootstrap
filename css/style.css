@@ -171,12 +171,6 @@ ul{
 	overflow: hidden;
 	transition: linear 300ms;
 }*/
-.header__nav-list {
-	height: 64px;
-	line-height: 64px;
-	overflow: hidden;
-	transition: linear 300ms;
-}
 
 /*#head-nav ul li{
 	float: left;
@@ -210,8 +204,9 @@ ul{
 
 
 /*#head.tiny, .tiny #head-nav ul{height: 58px; line-height: 58px;}*/
-.tiny,
 .header__nav-list {
+	overflow: hidden;
+	transition: linear 300ms;
 	height: 58px;
 	line-height: 58px;
 }
@@ -436,7 +431,6 @@ ul{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position-y: -25px;
-	/* padding: 10px 20px 20px; */
 	position: relative;
 	z-index: 10;
 
@@ -478,7 +472,7 @@ ul{
 	clear: both;
 	transform: translateY(-1px);
 	background-image: url("/images//head-bot.svg");
-	background-size: calc(100% + 18px) 40px;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 24px;
 	min-height: 24px;

@@ -64,4 +64,8 @@
   .card{
     padding: 0 40px;
   }
+
+  .section-hero__title-top{
+    background-position-y: -8px;
+  }
 }
