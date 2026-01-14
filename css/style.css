@@ -184,21 +184,25 @@ ul {
 .header__nav-list {
 	display: grid;
 	grid-template-columns: repeat(7,1fr);
-	align-items: flex-start;
-	justify-items: flex-start;
+	align-items: start;
+	justify-items: start;
 	gap: 20px;
 	height: 64px;
 	width: 100%;
-
+	row-gap: 0;
 }
 
 
 .header__nav-item {
-	float: left;
 	font-size: 16px;
 	font-weight: 700;
-	display: flex;
-	padding: 0 auto;
+}
+
+
+.header__nav-item.justify-content-center,
+.header__nav-item.align-items-center {
+	justify-content: flex-start !important;
+	align-items: flex-start !important;
 }
 
 .header__nav-item:nth-child(1) {
@@ -229,6 +233,8 @@ ul {
 /*#head-nav ul li a{display: block; padding: 0 15px;}*/
 .header__nav-link {
 	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
 
 /*#head-nav li a:hover,
