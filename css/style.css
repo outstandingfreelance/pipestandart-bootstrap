@@ -437,7 +437,8 @@ ul{
 	background-size: contain;
 	background-position-y: -25px;
 	/* padding: 10px 20px 20px; */
-	z-index: 0;
+	position: relative;
+	z-index: 10;
 
 	padding-top: 1px !important;
 	box-sizing: content-box;
@@ -520,11 +521,11 @@ ul{
 .content__work-link {
 	float: right;
 	color: #fff !important;
-	z-index: 3 !important;
+	position: relative;
+	z-index: 100 !important;
 	margin-bottom: -18px;
 	font-size: 21px;
 	font-weight: 700;
-	background-color: #000;
 }
 
 /*.our-work:hover, .our-work:visited{color: #fff;}*/
@@ -538,7 +539,6 @@ ul{
 	font-size: 18px;
 }
 
-.cards-list{}
 
 .card {
 	display: flex;
@@ -781,15 +781,15 @@ ul{
 .content__inner::before {
 	content: "";
 	position: absolute;
-	position: absolute;
 	overflow: hidden;
 	top: -25px;
 	top: 230px;
+	top: -130px;
 	left: 0;
 	right: 0;
 	height: 60px;
 	background: #f37f22;
 	transform: skewY(-2deg) translateY(30px) rotate(6deg) scaleX(1.02);
 	transform-origin: top left;
-	z-index: 0;
+	z-index: 1;
 }
